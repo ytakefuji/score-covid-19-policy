@@ -12,6 +12,10 @@ $ pip install scorecovid
 
 $ scorecovid
 
+# How scorecovid can score indivisual policies against covid-19?
+Scoring of individual policies against covid-19 is calculated by dividing the total number of deaths due to covid-19 by the population (in millions).
+The most recent values for total number of deaths and population are scraped from the Web sites.
+
 # scorecovid.py
 $ cat scorecovid.py
 <pre>
