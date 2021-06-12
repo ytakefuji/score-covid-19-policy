@@ -30,6 +30,13 @@ Brazil          484235         212   2284
 
 </pre>
 
+# How to handle errors
+<pre>
+For example, "ImportError: lxml not found, please install it"
+$ pip install lxml
+
+</pre>
+
 # How scorecovid can score indivisual policies against covid-19?
 Scoring of individual policies against covid-19 is calculated by dividing the total number of deaths due to covid-19 by the population (in millions).
 The most recent values for total number of deaths and population are scraped from the Web sites.
