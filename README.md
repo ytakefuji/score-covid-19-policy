@@ -1,5 +1,5 @@
 # score-covid-19-policy
-Create a file called countries.
+You must create a file called countries for scoring countries.
 <pre>
 $ cat countries
 South Korea,India,Brazil,France,New Zealand,Taiwan,Sweden,Japan,United States,Canada,United Kingdom,Israel
