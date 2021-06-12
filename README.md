@@ -45,7 +45,6 @@ def main():
 #print('deaths.csv was created')
 #
 
-
  print('countries file was read...')
  d=open('countries').read().strip()
  print('scoring the following ',len(d),' countries...')
@@ -58,11 +57,11 @@ def main():
    "population": range(len(d)),
    "score": range(len(d)),
   })
- 
+
  pp=pd.read_csv('pop.csv')
  print('calculating scores of countries\n')
  print('score is created in result.csv')
- 
+
  for i in d:
  # print(p[i][len(p)-1])
   dd.loc[dd.country==i,'deaths']=int(p[i][len(p)-1])
@@ -70,11 +69,11 @@ def main():
   dd.loc[dd.country==i,'population']=int(pp.loc[pp.Country==i,'Population']/1000000)
   dd.loc[dd.country==i,'score']=int(dd.loc[dd.country==i,'deaths']/dd.loc[dd.country==i,'population'])
  dd=dd.sort_values(by=['score'])
- sp.call("rm total_deaths.csv pop.csv",shell=True)
  dd.to_csv('result.csv',index=False)
  dd=pd.read_csv('result.csv',index_col=0)
  print(dd)
+ sp.call("rm total_deaths.csv pop.csv",shell=True)
+
 if __name__ == "__main__":
  main()
-
 </pre>
