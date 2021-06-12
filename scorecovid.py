@@ -53,9 +53,9 @@ def main():
   dd.loc[dd.country==i,'population']=int(pp.loc[pp.Country==i,'Population']/1000000)
   dd.loc[dd.country==i,'score']=int(dd.loc[dd.country==i,'deaths']/dd.loc[dd.country==i,'population'])
  dd=dd.sort_values(by=['score'])
+ dd.to_csv('result.csv',index=False)
+ dd=pd.read_csv('result.csv',index_col=0)
  print(dd)
- dd.to_csv('result.csv')
- print('pop.csv and total_deaths.csv were removed')
  sp.call("rm total_deaths.csv pop.csv",shell=True)
 
 if __name__ == "__main__":
