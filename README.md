@@ -1,5 +1,5 @@
 # score-covid-19-policy
-You must create a file called countries for scoring countries.
+You must create a file called countries for scoring individual policies of countries.
 
 Country names must be separated by comma.
 <pre>
