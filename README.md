@@ -12,8 +12,8 @@ $ pip install scorecovid
 
 $ scorecovid
 
-# score.py
-$ cat score.py
+# scorecovid.py
+$ cat scorecovid.py
 <pre>
 import requests,re
 import pandas as pd
