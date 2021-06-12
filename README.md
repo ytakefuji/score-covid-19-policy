@@ -8,9 +8,27 @@ South Korea,India,Brazil,France,New Zealand,Taiwan,Sweden,Japan,United States,Ca
 </pre>
 
 # How to install and run scorecovid
+<pre>
 $ pip install scorecovid
 
 $ scorecovid
+score is created in result.csv
+                deaths  population  score
+country
+New Zealand         26           4      6
+Taiwan             385          23     16
+South Korea       1982          51     38
+Japan            13936         126    110
+India           367081        1380    266
+Canada           25863          37    699
+Israel            6428           8    803
+Sweden           14574          10   1457
+France          110506          65   1700
+United States   599472         331   1811
+United Kingdom  128148          67   1912
+Brazil          484235         212   2284
+
+</pre>
 
 # How scorecovid can score indivisual policies against covid-19?
 Scoring of individual policies against covid-19 is calculated by dividing the total number of deaths due to covid-19 by the population (in millions).
@@ -56,7 +74,8 @@ def main():
  print(d)
 
  dd=pd.DataFrame(
-  { "country": d,
+  { 
+   "country": d,
    "deaths": range(len(d)),
    "population": range(len(d)),
    "score": range(len(d)),
