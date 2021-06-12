@@ -1,10 +1,18 @@
 # score-covid-19-policy
+Create a file called countries.
+<pre>
+$ cat countries
+South Korea,India,Brazil,France,New Zealand,Taiwan,Sweden,Japan,United States,Canada,United Kingdom,Israel
+</pre>
+
+# score.py
+$ cat score.py
 <pre>
 import requests,re
 import pandas as pd
 
+######### scraping population
 url='https://www.worldometers.info/world-population/population-by-country/'
-
 print('scraping population...')
 page=requests.get(url)
 df = pd.read_html(page.text)[0]
@@ -13,9 +21,16 @@ df.columns.values[2]='Population'
 #df = pd.read_html(page.text,flavor='html5lib')[0]
 df.to_csv('pop.csv')
 print('pop.csv was created')
-#
-#
+
+###########
+
 # deaths.csv or total_deaths.csv
+# https://github.com/owid/covid-19-data/raw/master/public/data/jhu/total_deaths.csv
+print('downloading total_deaths.csv file')
+import subprocess as sp
+sp.call("wget https://github.com/owid/covid-19-data/raw/master/public/data/jhu/total_deaths.csv",shell=True)
+p=pd.read_csv('total_deaths.csv')
+
 '''
 from urllib.request import Request, urlopen
 url='https://www.worldometers.info/coronavirus/#nav-today/'
@@ -26,11 +41,15 @@ df = pd.read_html(page)[0]
 df.to_csv('deaths.csv')
 print('deaths.csv was created')
 '''
+
+########### reading countries
+
 print('countries file was read...')
 d=open('countries').read().strip()
 print('scoring the following countries...')
 d=d.split(',')
 print(d)
+###########
 
 dd=pd.DataFrame(
  { "country": d,
@@ -39,17 +58,9 @@ dd=pd.DataFrame(
   "score": range(len(d)),
  })
 
-# deaths information can be downloaded from the following site:
-# https://github.com/owid/covid-19-data/raw/master/public/data/jhu/total_deaths.csv
-print('downloading total_deaths.csv file')
-import subprocess as sp
-sp.call("wget https://github.com/owid/covid-19-data/raw/master/public/data/jhu/total_deaths.csv",shell=True)
-
-p=pd.read_csv('total_deaths.csv')
 pp=pd.read_csv('pop.csv')
 
-print('calculating scores of countries')
-print('\n')
+print('calculating scores of countries\n')
 print('result will be result.csv')
 
 for i in d:
