@@ -7,6 +7,11 @@ $ cat countries
 South Korea,India,Brazil,France,New Zealand,Taiwan,Sweden,Japan,United States,Canada,United Kingdom,Israel
 </pre>
 
+# How to install and run scorecovid
+$ pip install scorecovid
+
+$ scorecovid
+
 # score.py
 $ cat score.py
 <pre>
