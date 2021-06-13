@@ -16,6 +16,7 @@ def main():
  import subprocess as sp
  sp.call("wget https://github.com/owid/covid-19-data/raw/master/public/data/jhu/total_deaths.csv",shell=True)
  p=pd.read_csv('total_deaths.csv')
+ date=p['date'][len(p)-1]
 
 #
 #from urllib.request import Request, urlopen
@@ -36,7 +37,8 @@ def main():
  print(d)
 
  dd=pd.DataFrame(
-  { "country": d,
+  { 
+   "country": d,
    "deaths": range(len(d)),
    "population": range(len(d)),
    "score": range(len(d)),
@@ -45,6 +47,7 @@ def main():
  pp=pd.read_csv('pop.csv')
  print('calculating scores of countries\n')
  print('score is created in result.csv')
+ print('date is ',date)
  
  for i in d:
  # print(p[i][len(p)-1])
@@ -56,7 +59,7 @@ def main():
  dd.to_csv('result.csv',index=False)
  dd=pd.read_csv('result.csv',index_col=0)
  print(dd)
- sp.call("rm total_deaths.csv pop.csv",shell=True)
+# sp.call("rm total_deaths.csv pop.csv",shell=True)
 
 if __name__ == "__main__":
  main()
