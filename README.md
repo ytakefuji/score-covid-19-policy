@@ -13,6 +13,7 @@ $ pip install scorecovid
 
 $ scorecovid
 score is created in result.csv
+date is  2021-06-11
                 deaths  population  score
 country
 New Zealand         26           4      6
