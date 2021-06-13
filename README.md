@@ -1,7 +1,7 @@
 # score-covid-19-policy
 You must create a file called countries for scoring individual policies of countries.
 
-Country names must be separated by comma.
+Country names must be separated by commas.
 <pre>
 $ cat countries
 South Korea,India,Brazil,France,New Zealand,Taiwan,Sweden,Japan,United States,Canada,United Kingdom,Israel
