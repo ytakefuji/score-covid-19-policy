@@ -34,7 +34,8 @@ Brazil          484235         212   2284
 # Background
 There are ways to mitigate pandemics and prevent infections.
 We need to learn good policies from countries with high scores.
-Scoring tells us the performance of health care policies in countries that are coping well with pandemics and those that are not.
+Scoring tells us the performance of health policies in individual 
+countries that are coping well with pandemics and those that are not.
 
 # How to handle errors
 <pre>
