@@ -76,10 +76,11 @@ def main():
 #print('deaths.csv was created')
 #
 
+
  print('countries file was read...')
  d=open('countries').read().strip()
- print('scoring the following ',len(d),' countries...')
  d=d.split(',')
+ print('scoring the following ',len(d),' countries...')
  print(d)
 
  dd=pd.DataFrame(
@@ -105,8 +106,9 @@ def main():
  dd.to_csv('result.csv',index=False)
  dd=pd.read_csv('result.csv',index_col=0)
  print(dd)
-# sp.call("rm total_deaths.csv pop.csv",shell=True)
+ sp.call("rm total_deaths.csv pop.csv",shell=True)
 
 if __name__ == "__main__":
  main()
+
 </pre>
