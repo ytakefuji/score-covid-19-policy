@@ -1,4 +1,9 @@
 # score-covid-19-policy
+The paper was published in Healthcare Analytics (2021):
+SCORECOVID: A Python Package Index for scoring the individual policies against COVID-19
+
+https://doi.org/10.1016/j.health.2021.100005
+
 You must create a file called countries for scoring individual policies of countries.
 
 Country names must be separated by commas.
