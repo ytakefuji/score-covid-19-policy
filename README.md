@@ -4,7 +4,7 @@ SCORECOVID: A Python Package Index for scoring the individual policies against C
 
 https://doi.org/10.1016/j.health.2021.100005
 
-You must create a file called countries for scoring individual policies of countries.
+You may create a file called countries for scoring individual policies of countries.
 
 Country names must be separated by commas.
 <pre>
