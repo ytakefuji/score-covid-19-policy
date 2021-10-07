@@ -4,6 +4,11 @@ SCORECOVID: A Python Package Index for scoring the individual policies against C
 
 https://doi.org/10.1016/j.health.2021.100005
 
+The paper was published in Journal of Infection and Public Health (2021):
+Technological forecasting plays a key role in mitigating the pandemic
+
+https://doi.org/10.1016/j.jiph.2021.09.010
+
 You may create a file called countries for scoring individual policies of countries.
 
 Country names must be separated by commas.
