@@ -9,7 +9,7 @@ Technological forecasting plays a key role in mitigating the pandemic
 
 https://doi.org/10.1016/j.jiph.2021.09.010
 
-scorecovid has been downloaded by 7284 users worldwide.
+scorecovid has been downloaded by 7659 users worldwide.
 
 You may create a file called countries for scoring individual policies of countries.
 
