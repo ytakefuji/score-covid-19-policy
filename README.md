@@ -16,7 +16,7 @@ You may create a file called countries for scoring individual policies of countr
 Country names must be separated by commas.
 <pre>
 $ cat countries
-South Korea,India,Brazil,France,New Zealand,Taiwan,Sweden,Japan,United States,Canada,United Kingdom,Israel
+Iceland,South Korea,India,Brazil,France,New Zealand,Taiwan,Sweden,Japan,United States,Canada,United Kingdom,Israel
 </pre>
 
 # How to install and run scorecovid
