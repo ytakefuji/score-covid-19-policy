@@ -14,6 +14,10 @@ scorecovid has been downloaded by 7661 users worldwide.
 You may create a file called countries for scoring individual policies of countries.
 
 Country names must be separated by commas.
+
+VSL_data.csv was created by Mr. Kiuchi using data of the following paper:
+Viscusi, W., & Masterman, C. (2017). Income Elasticities and Global Values of a Statistical Life. Journal of Benefit-Cost Analysis, 8(2), 226-250. doi:10.1017/bca.2017.12
+
 <pre>
 $ cat countries
 Iceland,South Korea,India,Brazil,France,New Zealand,Taiwan,Sweden,Japan,United States,Canada,United Kingdom,Israel
