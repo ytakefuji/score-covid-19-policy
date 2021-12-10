@@ -66,6 +66,11 @@ $ pip install lxml
 Scoring of individual policies against covid-19 is calculated by dividing the total number of deaths due to covid-19 by the population (in millions).
 The most recent values for total number of deaths and population are scraped from the Web sites.
 
+# Exercises for students
+1. Calculate economic loss of a country due to the total number of deaths due to COVID-19 using a value of statistical life (VSI).
+
+2. Add two columns to the result of scorecovid: VSI and economic loss.
+
 # scorecovid.py
 $ cat scorecovid.py
 <pre>
