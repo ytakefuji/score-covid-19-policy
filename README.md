@@ -19,6 +19,7 @@ VSL_data.csv was created by Mr. Kiuchi using data of the following paper:
 Viscusi, W., & Masterman, C. (2017). Income Elasticities and Global Values of a Statistical Life. Journal of Benefit-Cost Analysis, 8(2), 226-250. doi:10.1017/bca.2017.12
 
 Taiwan VSL: https://www.cier.edu.tw/public/Data/2018-5.pdf
+
 Taiwan GNI: https://eng.stat.gov.tw/point.asp?index=1
 
 <pre>
