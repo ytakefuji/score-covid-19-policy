@@ -33,21 +33,24 @@ $ pip install scorecovid
 
 $ scorecovid
 score is created in result.csv
-date is  2021-06-13
-                deaths  population  score
-country                                  
-New Zealand         26           4      6
-Taiwan             437          23     19
-South Korea       1988          51     38
-Japan            14023         126    111
-India           374305        1380    271
-Canada           25895          37    699
-Israel            6430           8    803
-Sweden           14574          10   1457
-France          110553          65   1700
-United States   599769         331   1811
-United Kingdom  128168          67   1912
-Brazil          487401         212   2299
+date is  2022-03-19
+                deaths  population   score
+country
+New Zealand        151        4.82    31.3
+Taiwan             853       23.82    35.8
+Japan            27056      126.48   213.9
+Australia         5725       25.50   224.5
+South Korea      12428       51.27   242.4
+Iceland             91        0.34   267.6
+India           516479     1380.00   374.3
+Canada           37204       37.74   985.8
+Israel           10419        8.66  1203.1
+Germany         126920       83.78  1514.9
+Sweden           18053       10.10  1787.4
+France          140972       65.27  2159.8
+United Kingdom  163658       67.89  2410.6
+United States   971087      331.00  2933.8
+Brazil          657389      212.56  3092.7
 
 </pre>
 
