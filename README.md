@@ -30,6 +30,8 @@ Iceland,South Korea,India,Brazil,France,New Zealand,Taiwan,Sweden,Japan,United S
 # How to install and run scorecovid
 <pre>
 $ pip install scorecovid
+or
+$ pip install scorecovid --force-reinstall --no-cache-dir --no-binary :all:
 
 $ scorecovid
 score is created in result.csv
