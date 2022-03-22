@@ -1,4 +1,6 @@
 # score-covid-19-policy
+[![Open in Code Ocean](https://codeocean.com/codeocean-assets/badge/open-in-code-ocean.svg)](https://codeocean.com/capsule/0675fd94-870e-4a3c-ab47-6685096bf16d/tree)
+
 The paper was published in Healthcare Analytics (2021):
 SCORECOVID: A Python Package Index for scoring the individual policies against COVID-19
 
